@@ -83,6 +83,7 @@ def calculate_active_amr_cost(params):
     ppml = tuple(end_ppm_limits)
     rranges = (vl,dhl,ppml)
     
+    # This is the number of grid points the brute-force solver tests for each variable before starting gradient descent
     n = 50 #Reduce this value to 10 or so to speed the solver up a lot; use at least 50 for final results.
     #I've previously tested the optimizer stability by randomizing the grid points the brute force optimizer tests
     
